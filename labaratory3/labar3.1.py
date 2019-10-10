@@ -1,15 +1,21 @@
-import logging, Checker
-logging.basicConfig(level=logging.WARN)
-Checker.greet(3,'Замінити перші 3 символи слів, що мають обрану довжину, на символ')
+import Checker
+
+
+Checker.greet(3, 'Замінити перші 3 символи слів, що мають обрану довжину, на символ')
 while True:
-    words = []
-    while True:
-        words.append(input('Введить слово'))
-        if input('Бажаєте продовжити(+)') != '+':
-            break
-    logging.debug(words)
-    for i in range(len(words)):
-        words[i] = '***'+words[i][3:]
-    print(words)
+    words = input('Введить речення ')
+    print('Введить задану довжину:', end='')
+    leng = Checker.iCheck()
+    i=0
+    newWords=str('')
+    print(type(leng))
+    for word in words.split(' '):
+        if len(word) == leng:
+            print(word)
+            newWords += '*'+word[3:]+' '
+        else:
+            newWords = newWords + (word +' ')
+
+    print(newWords)
     if input('Бажаєте продовжити(+)') != '+':
-            break
+        break

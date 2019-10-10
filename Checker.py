@@ -14,6 +14,12 @@ def iCheck():
         if b >= 1:
             return b
         print('введіть занчення ≥ 1')
+def oCheck():
+    while True:
+        b = intCheck()
+        if b >= 0:
+            return b
+        print('введіть занчення ≥ 1')
 
 
 def intCheck():

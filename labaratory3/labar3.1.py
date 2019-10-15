@@ -6,15 +6,14 @@ while True:
     words = input('Введить речення ')
     print('Введить задану довжину:', end='')
     leng = Checker.iCheck()
-    i=0
-    newWords=str('')
+    newWords = str('')
     print(type(leng))
     for word in words.split(' '):
         if len(word) == leng:
             print(word)
             newWords += '*'+word[3:]+' '
         else:
-            newWords = newWords + (word +' ')
+            newWords = newWords + (word + ' ')
 
     print(newWords)
     if input('Бажаєте продовжити(+)') != '+':

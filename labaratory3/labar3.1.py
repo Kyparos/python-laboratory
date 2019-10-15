@@ -7,7 +7,6 @@ while True:
     print('Введить задану довжину:', end='')
     leng = Checker.iCheck()
     newWords = str('')
-    print(type(leng))
     for word in words.split(' '):
         if len(word) == leng:
             print(word)

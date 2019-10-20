@@ -9,7 +9,6 @@ while True:
     newWords = str('')
     for word in words.split(' '):
         if len(word) == leng:
-            print(word)
             newWords += '*'+word[3:]+' '
         else:
             newWords = newWords + (word + ' ')

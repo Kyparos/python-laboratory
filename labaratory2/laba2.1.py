@@ -2,9 +2,9 @@ import Checker as ch
 ch.greet(2 ,'Розрахунок за формулой')
 while True:
     print('Введіть n')
-    n = ch.iCheck()
+    n = ch.nCheck()
     print('Введіть x')
-    x = ch.nCheck()
+    x = ch.floatCheck()
     p = 1
     for i in range(1, n + 1):
         p *= (i + x)

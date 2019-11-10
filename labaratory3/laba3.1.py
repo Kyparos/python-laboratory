@@ -5,7 +5,7 @@ Checker.greet(3, 'Замінити перші 3 символи слів, що м
 while True:
     words = input('Введить речення ')
     print('Введить задану довжину:', end='')
-    leng = Checker.iCheck()
+    leng = Checker.nCheck()
     newWords = str('')
     for word in words.split(' '):
         if len(word) == leng:

@@ -85,10 +85,24 @@ def nCheck(num):
 def oCheck(num):
     """
     if a is Natural+0 number return it or force to enter Natural+0 number
-    :param a: any
+    :param num: any
     :return: NAtural+0 number
     """
     b = intCheck(num)
+    while True:
+        if b >= 0:
+            return b
+        print('введіть занчення ≥ 1')
+        b = intCheck()
+
+
+def ofCheck(num):
+    """
+    if a is float>=0 number return it or force to enter Natural+0 number
+    :param num: any
+    :return: float>=0 number
+    """
+    b = floatCheck(num)
     while True:
         if b >= 0:
             return b

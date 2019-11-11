@@ -12,27 +12,16 @@ ch.greet(1, """Користувач уводить суму вкладу в ба
 Знайти суму вкладу через 5 років (розглянути два способи нарахування відсотків)
 """)
 print('Введіть суму вкладу')
-m1 = 'Введіть сумму >0'
 m2 = 'Введіть 1 або 2'
-m3 = 'Введіть чісло >0'
+m1 = 'Введіть чісло >0'
 summ = 0
 ans = 0
 pro = 0
-while True:
-    summ = ch.floatCheck()
-    if summ > 0:
-        break
-    else:
-        print(m1)
+summ = input(m1)
+summ = ch.ofCheck(summ)
 print('введіть річні проценти')
-while True:
-    pro = ch.floatCheck()
-    if pro > 0:
-        pro = pro * 0.01
-        break
-    else:
-        print(m3)
-
+pro = input(m1)
+pro = ch.ofCheck(pro)
 print("""Оберіть тип капіталізаціі
  1) Без капіталізаціі 
  2) Шорічна капіталізаціі """)

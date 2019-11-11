@@ -6,10 +6,10 @@
 import Checker as ch
 ch.greet(2 ,'Розрахунок за формулой')
 while True:
-    print('Введіть n')
-    n = ch.nCheck()
-    print('Введіть x')
-    x = ch.floatCheck()
+    n = input('Введіть n')
+    n = ch.nCheck(n)
+    x = input('Введіть x')
+    x = ch.floatCheck(x)
     p = 1
     for i in range(1, n + 1):
         p *= (i + x)

@@ -6,8 +6,8 @@
 import Checker as ch
 ch.greet(2,'Визначити і вивести на екран і цифри цілого числа n.')
 while True:
-    print('Введіть число')
-    n = ch.intCheck()
+    n = input('Введіть число')
+    n = ch.intCheck(n)
     rasr = 10
     memory = 0
     while True:

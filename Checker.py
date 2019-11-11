@@ -27,11 +27,10 @@ def floatValid(num):
 
 def floatCheck(a):
     """
-    if a is float return it or force to enter float
+     if a is float return it or force to enter float
     :param a: any
     :return: float
     """
-    a = input()
     while True:
         if floatValid(a):
             return float(a)
@@ -46,7 +45,7 @@ def intCheck(a):
     :param a: any
     :return: int
     """
-    a = input()
+
     while True:
         if intValid(a):
             return int(a)

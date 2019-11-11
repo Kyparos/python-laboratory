@@ -1,3 +1,8 @@
+"""
+Розрахунок за формулой
+
+"""
+
 import Checker as ch
 ch.greet(2 ,'Розрахунок за формулой')
 while True:

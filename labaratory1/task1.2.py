@@ -14,10 +14,10 @@ def check():
     :return: 0 or 1
     """
 
-    a = input('Введите число ')
-    a = ch.floatCheck(a)
-    print(a)
-    if a < 0:
+    num = input('Введите число ')
+    num = ch.floatCheck(num)
+    print(num)
+    if num < 0:
         return 1
     else:
         return 0

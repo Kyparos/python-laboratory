@@ -27,6 +27,8 @@ while True:
     print("'a: ",c)
     c = u - b
     print("'b: ",c)
+    c = (a.union(b))-(a-b)
+    print('F= ',c)
     if input('Бажаєте продовжити(+)') != '+':
         break
 

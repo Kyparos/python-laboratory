@@ -25,6 +25,19 @@ def floatValid(num):
         return False
 
 
+def intLitstValid(iList):
+    """
+    check if it list of int
+    :type iList: list
+    """
+    for inta in iList:
+        if intValid(inta):
+            continue
+        else:
+            return False
+    return True
+
+
 def floatCheck(a):
     """
      if a is float return it or force to enter float
@@ -108,3 +121,12 @@ def ofCheck(num):
             return b
         print('введіть занчення ≥ 1')
         b = intCheck()
+
+
+def intListCheck(iList):
+    while True:
+        if intLitstValid(iList):
+            return iList
+        else:
+            print('введіть список цілочисленних значень')
+            iList = input().split(' ')

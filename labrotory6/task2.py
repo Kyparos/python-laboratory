@@ -15,25 +15,19 @@ while True:
     m = input('введить m: ')
     m = ch.intCheck(m)
     matrix = np.empty((n, m))
-    print(matrix)
-    print(matrix[0])
     for i in range(n):
         for j in range(m):
             temp = input('введить елемент: ')
             matrix[i][j] = ch.intCheck(temp)
-    print(matrix)
     suma = sum(sum(matrix))
     matrixPt = np.empty((n, 1))
-    print(matrixPt)
     for i in range(n):
         tSum = 0
         for j in range(m):
             te = int(matrix[i][j])
-            print(te)
             tSum += te
 
         tSum = tSum / suma
-        print(tSum)
         matrixPt[i][0] = tSum
     matrix = np.append(matrix, matrixPt, axis=1)
     print(matrix)

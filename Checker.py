@@ -67,17 +67,17 @@ def intCheck(a):
             a = input()
 
 
-def greet(a, b):
+def greet(num, task):
     """
     printing info about laba
-    :param a: nuber of laba : int
-    :param b: theme : str
+    :param num: nuber of laba : int
+    :param task: theme : str
     """
     print("""Малахатка Олександр Володимирович
     Лабараторна работа №%d
     Варіант №7
     %s
-    """ % (a, b))
+    """ % (num, task))
 
 
 def nCheck(num):
